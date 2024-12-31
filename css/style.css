@@ -1,0 +1,536 @@
+body {
+  font-size: 20px;
+  color:rgb(27, 50, 100);
+  box-sizing: border-box;
+}
+
+img {
+  width:100%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 30px;
+  color:#1B3264;
+}
+
+
+/* ヘッダー */
+header{
+  padding:20px;
+  background-color: rgb(23, 131, 206);
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width:20px;
+  margin-right:10px;
+}
+
+.header-left, .header-right{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left{
+  max-width:300px;
+}
+
+.header-right{
+  width: 520px;
+}
+
+.header-left li, .header-right li{
+padding:5px 0;
+text-align: center;
+}
+
+.download, .contact{
+  border-radius: 15px;
+}
+
+.download{
+  width: 120px;
+  background: linear-gradient(90deg, rgb(248, 126, 18), rgb(247, 194, 18)); 
+}
+
+.contact{
+  width:110px;
+  color:black;
+  background-color: #fff;
+}
+
+
+/* ｆｖ */
+#fv{
+  height:500px;
+  padding:40px 0;
+  background-color: rgb(23, 131, 206);
+  color:#fff;
+  position:relative;
+}
+
+.fv-container{
+ max-width: 1800px;
+ margin:0 auto;
+}
+
+.appeal{
+  width:380px;
+  margin:0 200px 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.appeal img{
+  width:100px;
+}
+
+.appeal-text1, .appeal-text2, .appeal-text3{
+  max-width: 90px;
+  text-align: center;
+  font-size: 14px;
+  position:absolute;
+  top:58px;
+}
+
+.appeal-text1{
+  right:486px;
+}
+
+.appeal-text2{
+  right:356px;
+  font-size: 13px;
+}
+
+.appeal-text3{
+  right:238px;
+  font-size: 13px;
+}
+
+.humanresourse, h1, .fv-text{
+  font-style: italic;
+}
+
+.humanresourse{
+  margin:0 0 0px 100px;
+  transform: rotate(-5deg)
+}
+
+.fv-title-1,.fv-title-2{
+  display: inline-block;
+  font-weight: bold;
+}
+
+.fv-title-1{
+  margin-left:80px;
+}
+
+.fv-bigger{
+  font-size: 56px;
+}
+
+.plain{
+  font-size: 30px;
+}
+
+.fv-bigger, .plain{
+  transform: rotate(3deg)
+}
+
+.fv-biggest{
+  font-size: 140px;
+  font-family:"BIZ UDPMincho";
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4)
+}
+
+.fv-end{
+  font-size: 46px;
+}
+
+.fv-bigger, .fv-biggest, .yellow{
+  color:#fef000;
+}
+
+.img-fv{
+  width:480px;
+  position:absolute;
+  top:130px;
+  right:120px;
+}
+
+.threeminuts{
+margin:50px 0 10px 100px;
+}
+
+.btn{
+  width:510px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn li {
+  display: inline-block;
+}
+
+.download-bigger, .inquiry-bigger{
+  width:250px; 
+  padding:7px 0;
+  text-align: center;
+  font-weight:bolder;
+  border-radius: 20px;
+  line-height: 41.5px;
+}
+
+.download-bigger{
+  background: linear-gradient(90deg, rgb(248, 126, 18), rgb(247, 194, 18));
+}
+
+.download-bigger img{
+  width:30px;
+}
+
+.inquiry-bigger{
+  background-color: #20326A;
+}
+
+
+/* メインポイント */
+#main-point{
+  background-color: #044294;
+  color:#fff;
+}
+
+.main-point-detail{
+  max-width:1000px;
+  margin: 0 auto;
+  padding:20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-point-detail img {
+  width:40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* 導入企業 */
+#install-company{
+  margin:20px 0;
+}
+
+
+/* Recruiting Cloud が解決する課題 */
+#problem{
+  padding:60px 0;
+  background-color: #E9F3FD;
+}
+
+#problem .heading{
+  padding-bottom:60px;
+}
+
+.problem-list{
+  width:1000px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.problem-list li{
+  max-width: 300px;
+  display: block;
+  text-align: center;
+
+}
+
+.problem-list img{
+  width:200px;
+  margin:0 30px auto;
+}
+
+.title{
+  padding:20px 0 10px;
+  font-weight: bolder;
+  display: block;
+}
+
+.problem-detail{
+  line-height: 30px;
+}
+
+
+/* Recruiting Cloud なら安く ・ 多く ・ 楽に応募が集まる！ */
+#feature{
+  padding: 60px 0 120px 0;
+}
+
+#feature .heading{
+  margin:0 0 80px 200px;
+  text-align: left;
+  line-height: 50px;
+}
+
+.blue, .point-small{
+  color: #16ABF0;
+}
+
+.point{
+  width:800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:70px auto;
+}
+
+.text{
+  padding:0 40px;
+}
+
+.text h3{
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.description{
+ max-width: 500px;
+ line-height: 30px;
+ font-size: 16px;
+}
+
+.point img{
+  max-width: 260px;
+}
+
+
+/* 90%のお客様が目標の応募数を獲得！ */
+#convenient{
+  padding:70px 0;
+  background-color: #E9F3FD;
+  position:relative;
+}
+
+.img-arrow{
+  width:200px;
+  margin:auto;
+  display: block;
+  position: absolute;
+  top:-8%;
+  left:45%;
+}
+
+#convenient h3{
+  text-align: center;
+  font-size: 50px;
+}
+
+.ninety-biggest, .ninety-bigger{
+  font-weight: bold;
+  color: #16AAEF;
+}
+
+.ninety-biggest{
+ font-size: 130px;
+}
+
+.ninety-bigger{
+  font-size: 90px;
+}
+
+.summary{
+  width:1080px;
+  margin:40px auto;
+  display: block;
+}
+
+
+/* 導入事例 */
+#install{
+  padding:80px 0;
+}
+
+.gray{
+  font-size: 18px;
+  color: #B0B0B0;
+}
+
+#install h3{
+  max-width: 800px;
+  margin:0 0 50px 0;
+  font-size: 36px;
+  line-height: 66px;
+}
+
+#install .gray, #install h3{
+  margin-left: 200px;
+}
+
+.arrow-row{
+  max-width: 170px;
+  margin:-150px 200px 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-row li{
+  max-width: 80px;
+}
+
+.install-sumple{
+  width:1150px;
+  display: flex;
+  justify-content: space-between;
+  margin:50px  auto 0;
+}
+
+.install-sumple li{
+  width: 360px;
+}
+
+
+/* 最短1週間で導入開始後 */
+#running{
+  padding:100px 0;
+  background-color: #E9F3FD;
+  position:relative;
+}
+
+#running .heading{
+  font-size: 50px;
+  position:absolute;
+  top:-5%;
+  left:30%;
+}
+
+#running img{
+ width:240px;
+ margin-top:10px;
+}
+
+.running-group{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+
+.running-group li{
+text-align: center;
+}
+
+.running-group li p{
+  margin-top:20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+
+/* よくあるご質問 */
+#faq{
+  padding: 60px 0 100px;
+}
+
+#faq .heading{
+  margin:20px 0 50px 0;
+  text-align: left;
+}
+
+#faq .gray, #faq .heading{
+  margin-left: 200px;
+}
+
+.faq-group{
+  width:900px;
+  margin:0 auto 0 200px;
+  padding: 20px 0;
+  display: flex;
+  border-top:solid 2px #E9E9E9;
+}
+
+#faq ul{
+  display: flex;
+  align-items: center;
+}
+
+.q-mark{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right:10px;
+  border-radius: 50%;
+  border: solid 1.5px #2FA3E3;
+  text-align:center;
+  line-height: 50px;
+  color:#2FA3E3;
+  font-size: 14px;
+}
+
+.faq-test{
+  width:800px;
+  color:#1B3264;
+  font-size: 18px;
+}
+
+.plus-mark{
+  width:40px;
+  margin:0 200px 0 0;
+  padding: 20px 0;
+  color:#1B3264;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+}
+
+
+/* 問い合わせ */
+#inquiry{
+  height:350px;
+  background-color: #044294;
+  color:#fff;
+  text-align: center;
+  position:relative;
+}
+
+#inquiry ul{
+  max-width: 1000px;
+  display: flex;
+  position:absolute;
+  top:-20%;
+  left:10%;
+}
+
+#inquiry ul li:first-of-type{
+margin-right: 20px;
+}
+#inquiry ul li{
+box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.phonenumber{
+display: flex;
+justify-content: center;
+text-align: center;
+padding:200px 0 0;
+}
+
+.phonenumber img{
+  width:30px;
+}
+
+.phonenumber p{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.time{
+  margin-top:10px;
+  font-size: 16px;
+}
