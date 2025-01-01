@@ -116,17 +116,28 @@ text-align: center;
 }
 
 .humanresourse{
+  max-width:200px;
   margin:0 0 0px 100px;
-  transform: rotate(-5deg)
+  transform: rotate(-5deg);
 }
 
-.fv-title-1,.fv-title-2{
-  display: inline-block;
+.fv-title-1, .fv-title-2{
+  display: block;
   font-weight: bold;
+  font-style: italic;
 }
 
 .fv-title-1{
-  margin-left:80px;
+  max-width: 270px;
+  margin:20px 0 -100px 80px;
+  transform: rotate(-3deg);
+}
+
+.fv-title-2{
+  max-width: 500px;
+  margin:-50px 0 30px 320px;
+  transform: rotate(-3deg);
+  z-index: 10;
 }
 
 .fv-bigger{
@@ -135,10 +146,6 @@ text-align: center;
 
 .plain{
   font-size: 30px;
-}
-
-.fv-bigger, .plain{
-  transform: rotate(3deg)
 }
 
 .fv-biggest{
@@ -155,6 +162,29 @@ text-align: center;
   color:#fef000;
 }
 
+.fv-text{
+  max-width: 400px;
+  margin:10px 0 -20px 300px;
+  transform: rotate(-5deg);
+}
+
+.triangle-1, .triangle-2{
+  position:absolute;
+}
+
+.triangle-1{
+  width:200px;
+  top:226px;
+  left:100px;
+}
+
+.triangle-2{
+  width:300px;
+  top:250px;
+  left:350px;
+  z-index: 0;
+}
+
 .img-fv{
   width:480px;
   position:absolute;
@@ -163,7 +193,7 @@ text-align: center;
 }
 
 .threeminuts{
-margin:50px 0 10px 100px;
+margin:100px 0 10px 100px;
 }
 
 .btn{
@@ -182,7 +212,7 @@ margin:50px 0 10px 100px;
   padding:7px 0;
   text-align: center;
   font-weight:bolder;
-  border-radius: 20px;
+  border-radius: 30px;
   line-height: 41.5px;
 }
 
@@ -203,14 +233,21 @@ margin:50px 0 10px 100px;
 #main-point{
   background-color: #044294;
   color:#fff;
+  display: flex;
+  justify-content: center;
+}
+
+.main-point-number{
+  margin-right:10px;
+  font-weight: bolder;
 }
 
 .main-point-detail{
-  max-width:1000px;
+  max-width:250px;
   margin: 0 auto;
   padding:20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .main-point-detail img {
