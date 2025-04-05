@@ -5,7 +5,7 @@ body {
 }
 
 img {
-  width:100%;
+  max-width:100%;
 }
 
 .heading{
@@ -14,6 +14,10 @@ img {
   color:#1B3264;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
 /* ヘッダー */
 header{
@@ -25,7 +29,7 @@ header{
 }
 
 header img {
-  width:44px;
+  max-width:44px;
   margin-right:14px;
 }
 
@@ -42,8 +46,9 @@ header img {
 
 .header-right{
   padding: 12px 0 0 40px;
-  width: 580px;
+  max-width: 580px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .header-left li, .header-right li{
@@ -59,12 +64,12 @@ text-align: center;
 }
 
 .download{
-  width: 160px;
+  max-width: 160px;
   background: linear-gradient(90deg, rgb(248, 126, 18), rgb(247, 194, 18)); 
 }
 
 .contact{
-  width: 160px;
+  max-width: 160px;
   color:black;
   background-color: #fff;
 }
@@ -85,14 +90,14 @@ text-align: center;
 }
 
 .appeal{
-  width:420px;
+  max-width:420px;
   margin:20px 210px 0 auto;
   display: flex;
   justify-content: space-evenly;
 }
 
 .appeal img{
-  width:136px;
+  max-width:136px;
 }
 
 .appeal-text1, .appeal-text2, .appeal-text3{
@@ -188,13 +193,13 @@ text-align: center;
 }
 
 .triangle-1{
-  width:300px;
+  max-width:300px;
   top:280px;
   left:150px;
 }
 
 .triangle-2{
-  width:300px;
+  max-width:300px;
   top:290px;
   left:488px;
   z-index: 0;
@@ -213,19 +218,19 @@ text-align: center;
 }
 
 .btn{
-  width:630px;
+  max-width:630px;
   margin-left: 130px;
   display: flex;
   justify-content: space-between;
 }
 
 .download-bigger, .inquiry-bigger{
-  width:300px; 
+  max-width:300px; 
   height:60px;
   padding:7px 0;
   text-align: center;
   font-weight:bolder;
-  border-radius: 30px;
+  border-radius: 50px;
   line-height: 60px;
 }
 
@@ -249,10 +254,12 @@ text-align: center;
   background-color: #044294;
   color:#fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap:10px;
   font-size: 26px;
   font-weight: bold;
+  align-items: center;
+  padding: 10px;
 }
 
 .main-point-number{
@@ -266,14 +273,23 @@ text-align: center;
   padding:33px 0;
   display: flex;
   justify-content:space-between;
+  list-style: none;
 }
 
 .main-point-detail:first-of-type{
   margin-left: 100px;
 }
 
+.syasen{
+  max-width:156px;
+  height:3px;
+  background:#fff;
+  transform:rotate(135deg);
+}
+
+
 /* .main-point-detail img {
-  width:40px;
+  max-width:40px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -286,7 +302,7 @@ text-align: center;
 }
 
 #install-company img{
-  width:1060px;
+  max-width:1060px;
   margin:20px 0 0 180px;
 }
 
@@ -305,7 +321,7 @@ text-align: center;
 }
 
 .problem-list{
-  width:1200px;
+  max-width:1200px;
   margin:0 auto;
   display: flex;
   justify-content: space-between;
@@ -319,7 +335,7 @@ text-align: center;
 }
 
 .problem-list img{
-  width:240px;
+  max-width:240px;
   margin:10px 0 0 0;
 }
 
@@ -366,7 +382,7 @@ text-align: center;
 }
 
 .point, .point-2{
-  width:1160px;
+  max-width:1160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -430,7 +446,7 @@ padding-left: 10px;
 }
 
 .img-arrow{
-  width:160px;
+  max-width:160px;
   margin:auto;
   display: block;
   position: absolute;
@@ -459,7 +475,7 @@ padding-left: 10px;
 }
 
 .summary{
-  width:1140px;
+  max-width:1140px;
   margin:36px 0 0 170px;
   display: block;
 }
@@ -498,14 +514,14 @@ padding-left: 10px;
 }
 
 .install-sumple{
-  width:1370px;
+  max-width:1370px;
   display: flex;
   justify-content: space-between;
   margin:30px  auto 0;
 }
 
 .install-sumple li{
-  width: 470px;
+  max-width: 470px;
 }
 
 
@@ -524,7 +540,7 @@ padding-left: 10px;
 }
 
 #running img{
- width:290px;
+  max-width:290px;
 }
 
 .running-group{
@@ -561,18 +577,18 @@ text-align: center;
 #faq .gray{
   margin-left: 210px;
   font-weight: bold;
-
 }
 
 .faq-group{
-  width:960px;
-  margin:0 auto 0 210px;
+  max-width:1500px;
+  margin:0 auto ;
   padding: 20px 0;
   display: flex;
   border-top:solid 2px #E9E9E9;
 }
 
 #faq ul{
+  max-width: 100%;
   display: flex;
   align-items: center;
 }
@@ -590,20 +606,21 @@ text-align: center;
 }
 
 .faq-test{
-  width:800px;
+  max-width:800px;
   margin-left: 30px;
   color:#1B3264;
   font-size: 18px;
 }
 
 .plus-mark{
-  width:40px;
-  margin:0 200px 0 0;
+  max-width:40px;
+  margin:0;
   padding: 20px 0;
   color:#1B3264;
   display: flex;
   align-items: center;
   font-size: 26px;
+  text-align: right;
 }
 
 
@@ -624,12 +641,16 @@ text-align: center;
   left:14%;
 }
 
+#inquiry img{
+  border-radius: 30px;
+}
+
 #inquiry ul li:first-of-type{
 margin-right: 20px;
 }
-#inquiry ul li{
+/* #inquiry ul li{
 box-shadow: 5px 5px 5px rgba(0,0,0,.2);
-}
+} */
 
 .phonenumber{
 display: flex;
@@ -639,7 +660,7 @@ padding:200px 0 0;
 }
 
 .phonenumber img{
-  width:40px;
+  max-width:40px;
   height:40px;
   margin:36px 0 0 0;
 }
