@@ -29,8 +29,8 @@ header{
 }
 
 header img {
-  max-width:44px;
-  margin-right:14px;
+  max-width:70%;
+  margin-right:5%;
 }
 
 .header-left, .header-right{
@@ -39,32 +39,35 @@ header img {
 }
 
 .header-left{
-  padding: 20px 0 0 30px;
+  padding: 1.5% 0 0 2%;
   max-width:300px;
   font-size: 24px;
 }
 
 .header-right{
-  padding: 12px 0 0 40px;
-  max-width: 580px;
+  max-width: 800px;
+  padding: 1.5% 0 0 0;
   font-weight: bold;
   font-size: 16px;
 }
 
+.header-right li{
+margin: 0 1%;
+}
+
 .header-left li, .header-right li{
-  margin:auto;
-padding:5px 0;
-text-align: center;
+  padding:1% 0;
+  text-align: center;
 }
 
 .download, .contact{
   border-radius: 15px;
-  height:20px;
+  height:2%;
   line-height: 20px;
 }
 
 .download{
-  max-width: 160px;
+  max-width: 200px;
   background: linear-gradient(90deg, rgb(248, 126, 18), rgb(247, 194, 18)); 
 }
 
@@ -77,8 +80,8 @@ text-align: center;
 
 /* ｆｖ */
 #fv{
-  height:540px;
-  padding:40px 0;
+  height:10%;
+  padding:5% 0;
   background-color: rgb(23, 131, 206);
   color:#fff;
   position:relative;
