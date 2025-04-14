@@ -12,6 +12,11 @@ body {
     position:relative
   }
 
+a{
+  cursor: pointer;
+}
+
+
   /* ヘッダー */
 header{
   background-color: #fff;
@@ -83,21 +88,22 @@ header{
     padding: 3rem 1rem 4rem;
     display: flex;
     justify-content: center;
-    /* position:relative; */
+    /* background-image: url("../img/laurel-frame.png");
+    background-repeat: no-repeat; */
   }
 
   .appeal{
-    max-width:420px;
+    max-width:400px;
     display: flex;
     justify-content: space-evenly;
   }
-  
-  .appeal p{
+
+  /* .appeal p{
     font-size: 0.9rem;
-  }
+  } */
 
   .appeal img{
-    max-width:120px;
+    max-width:130px;
   }
   
   .appeal-text1, .appeal-text2, .appeal-text3{
@@ -107,18 +113,21 @@ header{
   }
   
   .appeal-text1{
-    top:8%;
-    left:4.5%;
+    top:10%;
+    left:3.5%;
+    font-size: 1.1rem;
   }
   
   .appeal-text2{
-    top:6%;
-    left:16%;
+    top:8%;
+    left:15.25%;
+    font-size: 1.1rem;
   }
   
   .appeal-text3{
-    top:8%;
-    left:28.2%;
+    top:10%;
+    left:27.75%;
+    font-size: 1.1rem;
   }
 
   .fv-container{
@@ -142,8 +151,9 @@ header{
 
   .hero .fv-container-text{
     margin: 2% 0;
-    font-size: 2.2rem;
+    font-size: 1.75rem;
     margin:6% 0;
+    line-height: 1.5;
   }
 
   .hero p .highlight-yellow {
@@ -361,6 +371,7 @@ h5 {
   margin: 5% 0;
   text-align: left;
   color: #1B3264;
+  line-height: 1.5;
 }
 
 .voice-box-text {
@@ -406,6 +417,8 @@ h5 {
 /* よくある質問 */
 .faq {
   margin-top: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 .faq h4 {
