@@ -13,7 +13,13 @@ body {
   }
 
   /* ヘッダー */
-  .header {
+header{
+  background-color: #fff;
+}
+
+  .header-container {
+    max-width: 1100px;
+    margin: 0 auto;
     background: white;
     padding: 1rem 0;
     border-bottom: 1px solid #ddd;
@@ -59,7 +65,7 @@ body {
   .btn {
     background-color: #20326a;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.25rem;
     border-radius: 50px;
     text-decoration: none;
   }
@@ -74,7 +80,7 @@ body {
     background: #1783CE;
     color: white;
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 4rem;
     display: flex;
     justify-content: center;
     /* position:relative; */
@@ -122,7 +128,6 @@ body {
 
   .hero  h6{
     font-size: 2.5rem;
-    font-style: italic;
     margin:3% 0;
   }
 
@@ -148,7 +153,7 @@ body {
   .hero .btn{
     font-size: 1.6rem;
     font-weight: bolder;
-    padding: 1.4%;
+    padding: 0.75rem 2rem;
   }
 
   .section {
@@ -201,12 +206,6 @@ body {
 .main-point-detail:last-of-type{
   border-right:none;
 }
-
-/* .syasen{
- width: 8px;
- height:8px;
- background-image: linear-gradient(to right top, transparent 48%, black 48%, black 48%, black 52%, transparent 52%);
-} */
 
   /* 導入企業 */
   .logos {
@@ -269,6 +268,10 @@ line-height: 1.2;
   text-align: center;
 }
 
+.merits-box-left{
+  max-width: 67.5%;
+}
+
 .highlight-blue {
   color: #16ABF0;
 }
@@ -276,16 +279,17 @@ line-height: 1.2;
 .merits-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .merits-box-point {
   color: #16ABF0;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #1B3264;
   line-height: 1.2;
   text-align: left;
@@ -295,8 +299,12 @@ h5 {
 .merits-box .merits-box-point-text {
   line-height: 1.5;
   text-align: left;
-  padding: 0 2%;
+  /* align-items: center; */
 }
+
+/* .merits img{
+  align-items: center;
+} */
 
 .cta-box {
   text-align: center;
@@ -345,7 +353,7 @@ h5 {
   margin-top: 5%;
   padding: 2.5%;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: left;
 }
 
@@ -406,27 +414,12 @@ h5 {
   padding-bottom: 1%;
 }
 
-.faq-item-1, .faq-item-2, .faq-item-3, .faq-item-4 {
+.faq-item {
   background: #eef5fa;
-  margin-bottom: 0.5rem;
+  margin: 0.75rem auto;
   padding: 1rem;
   border-radius: 5px;
-}
-
-.faq-item-1 {
-  max-width: 68%;
-}
-
-.faq-item-2 {
-  max-width: 46%;
-}
-
-.faq-item-3 {
-  max-width: 54%;
-}
-
-.faq-item-4 {
-  max-width: 50%;
+  max-width: 70%;
 }
 
 /* フッター */
@@ -447,7 +440,6 @@ footer {
 
 .footer-box-left {
   max-width: 600px;
-  background-color: #f7931e;
   background: linear-gradient(90deg, rgb(0, 118, 192), rgb(217, 234, 253));
   color: #fff;
   display: flex;
@@ -466,7 +458,7 @@ footer {
 .footer-box-left .footer-box-left-2 .btn {
   font-size: 24px;
   font-weight: bolder;
-  padding: 4.4%;
+  padding: 0.75rem 1.5rem;
 }
 
 .footer-box-left .bigger {
@@ -482,7 +474,7 @@ footer {
 
 .footer-box-right img {
   max-height: 40%;
-  margin-top: 18%
+  margin-top: 10%
 }
 
 .footer-box-right a {
@@ -505,6 +497,13 @@ footer a {
   text-decoration: underline;
 }
 
+
+footer .otoiawase_text{
+  font-size: 2rem;
+  color:#16ABF0;
+  font-weight: bolder;
+}
+
 footer .footer_phone {
   display: flex;
   justify-content: center;
@@ -515,9 +514,9 @@ footer .footer_phone {
 }
 
 .footer_phone img {
-  max-width: 4%;
+  max-width: 2.5%;
   object-fit: contain;
-  margin-right: 1%;
+  margin-right: 0.25%;
 }
 
 footer a {
@@ -527,6 +526,7 @@ footer a {
 
 footer p {
   font-size: 1.2rem;
+  line-height: 2;
 }
 
 footer .footer_uketsuke {
